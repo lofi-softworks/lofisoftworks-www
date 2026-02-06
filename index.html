@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="LoFi Softworks — thoughtful software, tools, and systems." />
+  <meta name="description" content="LoFi Softworks — independent app studio." />
   <title>LoFi Softworks</title>
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -21,137 +21,40 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="LoFi Softworks home">
-        <img
-          src="assets/lofi-softworks-transparent.png"
-          alt="LoFi Softworks"
-          class="logo"
-          width="360"
-          height="200"
-          loading="eager"
-        />
+        <span class="brand-name">LoFi Softworks</span>
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <a href="#work">What we do</a>
-        <a href="#values">How we work</a>
         <a href="#contact" class="btn btn-ghost">Contact</a>
+        <a href="privacy.html">Privacy</a>
       </nav>
     </div>
   </header>
 
-  <main id="content">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1>Quiet software for real problems.</h1>
-          <p class="lead">
-            LoFi Softworks is a creative-technical studio building thoughtful software, tools, and systems—
-            calm, capable, and intentionally human-scale.
-          </p>
+  <main id="content" class="hero">
+    <div class="container narrow hero-center">
+      <img
+        src="assets/lofi-softworks-transparent.png"
+        alt="LoFi Softworks"
+        class="logo-hero"
+        width="900"
+        height="520"
+        loading="eager"
+      />
 
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#contact">Start a conversation</a>
-            <a class="btn btn-secondary" href="#work">See what we build</a>
-          </div>
+      <h1 class="headline">An independent app studio.</h1>
 
-          <p class="micro">
-            Indie studio energy. Modern technical credibility. No hype.
-          </p>
-        </div>
+      <p class="lead">
+        We build our own products—small, focused apps and systems that ship fast, evolve responsibly,
+        and stay enjoyable to use.
+      </p>
 
-        <div class="hero-card" role="note" aria-label="Studio note">
-          <div class="card">
-            <h2 class="card-title">What’s “LoFi” mean here?</h2>
-            <p>
-              Warm, grounded design—paired with engineering that’s reliable and easy to maintain.
-              Think: the clarity of a good README, with just enough craft to feel like home.
-            </p>
-            <ul class="bullets">
-              <li>Prototypes → production</li>
-              <li>APIs, automation, dashboards</li>
-              <li>Internal tools & product MVPs</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+      <div class="divider"></div>
 
-    <section id="work" class="section">
-      <div class="container">
-        <h2>What we do</h2>
-        <p class="section-lead">
-          We build tools we actually want to use: small, sharp systems that reduce friction and add clarity.
-        </p>
-
-        <div class="grid3">
-          <article class="card">
-            <h3>Software systems</h3>
-            <p>
-              Practical apps and services with clean architecture and readable code.
-            </p>
-            <p class="tag">Web • Mobile • Backend</p>
-          </article>
-
-          <article class="card">
-            <h3>Automation & integrations</h3>
-            <p>
-              Data pipelines, alerts, and glue code that makes your stack feel cohesive.
-            </p>
-            <p class="tag">APIs • ETL • Workflows</p>
-          </article>
-
-          <article class="card">
-            <h3>Tools & prototypes</h3>
-            <p>
-              MVPs, proofs-of-concept, and internal tools—built to learn fast and scale responsibly.
-            </p>
-            <p class="tag">MVP • Prototyping • Iteration</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="values" class="section section-alt">
-      <div class="container">
-        <h2>How we work</h2>
-
-        <div class="grid2">
-          <div class="card">
-            <h3>Intentional, not flashy</h3>
-            <p>
-              We favor steady progress, useful defaults, and interfaces that feel calm instead of loud.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Human-scale technology</h3>
-            <p>
-              Systems should fit the people using them—clear workflows, solid docs, and maintainable code.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Creative but grounded</h3>
-            <p>
-              We’ll explore interesting ideas, but we’ll always land on something shippable.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Confidence without ego</h3>
-            <p>
-              Straight answers, clean scope, and honest tradeoffs. We keep it simple and real.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container narrow">
-        <h2>Contact</h2>
-        <p class="section-lead">
-          Have a project in mind? Send a short note and we’ll get back to you.
+      <section id="contact" class="contact">
+        <h2 class="contact-title">Contact</h2>
+        <p class="micro">
+          Want to reach us? Send a note here. Messages go to <strong>lofisoftworks@gmail.com</strong>.
         </p>
 
         <form
@@ -183,35 +86,24 @@
             </label>
           </div>
 
-          <input type="hidden" name="_subject" value="LoFi Softworks — New Inquiry">
+          <input type="hidden" name="_subject" value="LoFi Softworks — New Message">
           <input type="hidden" name="_template" value="table">
 
           <button type="submit" class="btn btn-primary">
-            Send message
+            Send
           </button>
-
-          <p class="micro">
-            Messages are sent directly to <strong>lofisoftworks@gmail.com</strong>.
-          </p>
         </form>
 
-        <div class="divider"></div>
-
-        <p class="micro">
-          Privacy matters. Read our <a href="privacy.html">Privacy Policy</a>.
+        <p class="micro footer-note">
+          <a href="privacy.html">Privacy Policy</a>
         </p>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> LoFi Softworks</span>
-      <span class="footer-links">
-        <a href="privacy.html">Privacy</a>
-      </span>
+      <footer class="site-footer-min">
+        <span>© <span id="year"></span> LoFi Softworks</span>
+      </footer>
     </div>
-  </footer>
+  </main>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();

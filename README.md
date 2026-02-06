@@ -1,10 +1,10 @@
-# LoFi Softworks — GitHub Pages Site
+# LoFi Softworks — GitHub Pages Site (Minimal)
 
-This repo contains a simple 2-page landing site for **LoFi Softworks**:
+This repo contains a minimal 2-page landing site for **LoFi Softworks**:
 
-- `index.html` — main landing page + contact form
+- `index.html` — landing page + contact form
 - `privacy.html` — privacy policy
-- `styles.css` — site styling
+- `styles.css` — styling
 - `assets/` — logo + favicon
 
 ## Contact form
@@ -20,15 +20,3 @@ Submissions are delivered to **lofisoftworks@gmail.com**.
 1. Push this repo to GitHub
 2. Repo Settings → **Pages**
 3. Deploy from **Branch**: `main` / `(root)`
-4. Optional: add a custom domain (`lofisoftworks.com`) and enable HTTPS
-
-## Custom domain
-
-If you use a custom domain, create a `CNAME` file in the repo root containing:
-
-```
-www.lofisoftworks.com
-```
-
-(or `lofisoftworks.com` depending on your preference)
-

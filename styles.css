@@ -1,4 +1,4 @@
-/* LoFi Softworks — landing site styles
+/* LoFi Softworks — minimal landing site
    Palette:
    Forest Green: #4A615E
    Burnt Orange: #D46A4C
@@ -66,33 +66,25 @@ a:hover{ color: var(--orange); }
   display:flex;
   align-items:center;
   justify-content: space-between;
-  padding: 18px 0;
+  padding: 14px 0;
   gap: 18px;
 }
 
 .brand{
-  display:flex;
-  align-items:center;
-  gap: 12px;
-  text-decoration: none;
+  text-decoration:none;
+  color: var(--text);
+  font-weight: 600;
 }
-
-.logo{
-  display:block;
-  height:auto;
-  max-width: 280px;
-  width: min(280px, 42vw);
-}
-
-.logo-small{
-  max-width: 220px;
-  width: min(220px, 38vw);
+.brand-name{
+  font-family: "Libre Baskerville", Georgia, serif;
+  letter-spacing: -0.01em;
+  color: var(--green);
 }
 
 .nav{
   display:flex;
   align-items:center;
-  gap: 16px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 .nav a{
@@ -104,137 +96,91 @@ a:hover{ color: var(--orange); }
 .nav a:hover{ color: var(--green); }
 
 .hero{
-  padding: 54px 0 26px;
+  padding: 38px 0 54px;
   position: relative;
 }
 
-/* very light “film grain” vibe without heavy effects */
+/* subtle grain */
 .hero:before{
   content:"";
   position:absolute;
   inset:0;
   pointer-events:none;
-  opacity: 0.06;
+  opacity: 0.05;
   background-image:
-    radial-gradient(circle at 10% 20%, rgba(46,46,46,0.7) 1px, transparent 1px),
-    radial-gradient(circle at 80% 40%, rgba(46,46,46,0.6) 1px, transparent 1px),
-    radial-gradient(circle at 30% 80%, rgba(46,46,46,0.5) 1px, transparent 1px);
-  background-size: 120px 120px, 160px 160px, 220px 220px;
+    radial-gradient(circle at 12% 18%, rgba(46,46,46,0.7) 1px, transparent 1px),
+    radial-gradient(circle at 78% 36%, rgba(46,46,46,0.6) 1px, transparent 1px),
+    radial-gradient(circle at 35% 82%, rgba(46,46,46,0.5) 1px, transparent 1px);
+  background-size: 140px 140px, 200px 200px, 240px 240px;
   mix-blend-mode: multiply;
 }
 
-.hero-grid{
-  display:grid;
-  grid-template-columns: 1.25fr 0.95fr;
-  gap: 26px;
-  align-items: start;
+.hero-center{
+  position: relative;
+  text-align: center;
 }
 
-.hero-copy h1{
+.logo-hero{
+  display:block;
+  margin: 8px auto 14px;
+  width: min(720px, 92vw);
+  height: auto;
+}
+
+.headline{
   font-family: "Libre Baskerville", Georgia, serif;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.2;
-  margin: 0 0 14px;
-  font-size: clamp(30px, 4vw, 44px);
+  margin: 0 0 10px;
+  font-size: clamp(22px, 3vw, 34px);
   color: var(--green);
 }
 
 .lead{
-  margin: 0 0 18px;
+  margin: 0 auto;
   color: var(--muted);
-  font-size: 1.06rem;
-  max-width: 56ch;
+  font-size: 1.05rem;
+  max-width: 64ch;
 }
 
 .micro{
-  margin: 12px 0 0;
+  margin: 10px 0 0;
   font-size: 0.92rem;
   color: rgba(46,46,46,0.68);
+}
+
+.divider{
+  height: 1px;
+  background: var(--border);
+  margin: 22px auto;
+  max-width: 520px;
 }
 
 .section{
   padding: 44px 0;
 }
 
-.section-alt{
-  background: rgba(255,255,255,0.28);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.section h2, .section h1{
+h1, h2{
   font-family: "Libre Baskerville", Georgia, serif;
-  font-weight: 700;
-  margin: 0 0 10px;
   color: var(--green);
   letter-spacing: -0.01em;
-}
-
-.section-lead{
-  margin: 0 0 18px;
-  color: var(--muted);
-  max-width: 70ch;
-}
-
-.grid3{
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.grid2{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
-
-.card{
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 18px 18px;
-}
-
-.card-title{
-  margin-top: 0;
-}
-
-.card h3{
-  margin: 0 0 6px;
-  font-family: "Libre Baskerville", Georgia, serif;
-  color: var(--text);
-  font-weight: 700;
-}
-
-.card p{ margin: 0 0 10px; color: var(--muted); }
-.card p:last-child{ margin-bottom: 0; }
-
-.tag{
-  color: rgba(74,97,94,0.9);
-  font-weight: 500;
-  font-size: 0.92rem;
 }
 
 .bullets{
   margin: 10px 0 0;
   padding-left: 18px;
   color: var(--muted);
+  text-align: left;
 }
 .bullets li{ margin: 6px 0; }
 
-.cta-row{
-  display:flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 14px;
-}
-
+/* Buttons */
 .btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  padding: 11px 14px;
+  padding: 10px 14px;
   border-radius: 999px;
   border: 1px solid var(--border);
   text-decoration:none;
@@ -242,83 +188,45 @@ a:hover{ color: var(--orange); }
   letter-spacing: 0.01em;
   transition: transform 0.06s ease, background 0.12s ease, border-color 0.12s ease;
 }
-
 .btn:active{ transform: translateY(1px); }
 
 .btn-primary{
   background: var(--orange);
-  color: #fff;
+  color: #fff !important;
   border-color: rgba(0,0,0,0.08);
 }
 .btn-primary:hover{
   background: #c85f43;
-  color: #fff;
 }
-
-.btn-secondary{
-  background: rgba(74,97,94,0.10);
-  color: var(--green);
-  border-color: rgba(74,97,94,0.22);
-}
-.btn-secondary:hover{
-  background: rgba(74,97,94,0.14);
-  color: var(--green);
-}
-
 .btn-ghost{
   background: transparent;
-  color: var(--text);
+  color: var(--text) !important;
 }
 .btn-ghost:hover{
   background: rgba(46,46,46,0.05);
-  color: var(--text);
 }
-
-.hero-card .card{
-  padding: 18px 18px;
-}
-
-.contact-row{
-  display:flex;
-  align-items:center;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.divider{
-  height: 1px;
-  background: var(--border);
-  margin: 22px 0;
-}
-
-.site-footer{
-  padding: 18px 0;
-  border-top: 1px solid var(--border);
-  background: rgba(246,243,238,0.9);
-}
-
-.footer-inner{
-  display:flex;
-  justify-content: space-between;
-  align-items:center;
-  gap: 12px;
-  color: rgba(46,46,46,0.72);
-  font-size: 0.92rem;
-}
-.footer-links a{
-  color: rgba(46,46,46,0.72);
-  text-decoration: none;
-}
-.footer-links a:hover{ color: var(--green); }
 
 /* Contact form */
+.contact{
+  text-align: left;
+  margin: 0 auto;
+  max-width: 560px;
+}
+.contact-title{
+  margin: 0 0 6px;
+  text-align: left;
+}
+
 .contact-form{
-  max-width: 520px;
+  margin-top: 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
 }
 
 .form-row{
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .form-row label{
@@ -334,7 +242,7 @@ a:hover{ color: var(--orange); }
   padding: 10px 12px;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.78);
   font-family: inherit;
   font-size: 0.95rem;
 }
@@ -346,7 +254,7 @@ a:hover{ color: var(--orange); }
   background: #fff;
 }
 
-/* Honeypot should be invisible */
+/* Honeypot invisible */
 .hp{
   position:absolute;
   left:-9999px;
@@ -355,9 +263,24 @@ a:hover{ color: var(--orange); }
   overflow:hidden;
 }
 
-@media (max-width: 920px){
-  .hero-grid{ grid-template-columns: 1fr; }
-  .grid3{ grid-template-columns: 1fr; }
-  .grid2{ grid-template-columns: 1fr; }
-  .logo{ max-width: 240px; }
+.footer-note{
+  margin-top: 12px;
+  text-align: center;
+}
+
+.site-footer-min{
+  margin-top: 26px;
+  color: rgba(46,46,46,0.68);
+  font-size: 0.92rem;
+}
+
+.footer-inner-min{
+  display:flex;
+  justify-content:center;
+  padding: 18px 0;
+}
+
+@media (max-width: 520px){
+  .contact{ max-width: 100%; }
+  .divider{ max-width: 100%; }
 }
